@@ -1,44 +1,44 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .page {
+	display: grid;
+	row-gap: 50px;
+	padding: 10px;
+	color: var(--accent-color);
+	font-family: 'IBM Plex mono', monospace;
+	font-size: 18px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 	background-image: var(--background-image);
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
-	font-family: 'IBM Plex mono', monospace;
-	padding: 10px;
-	color: var(--accent-color);
-	font-size: 18px;
-	display: grid;
-	row-gap: 50px;
 }
 
 .header {
-	display: grid;
 	position: relative;
+	display: grid;
 }
 
 .header::before {
-	right: 0;
 	content: '';
 	position: absolute;
+	right: 0;
 	width: 25px;
 	height: 25px;
-	background: transparent;
 	border-inline-end: 1px solid var(--corner-color);
 	border-block-end: 1px solid var(--corner-color);
+	background: transparent;
 	transform: rotate(270deg);
 }
 
 .header::after {
-	bottom: 0;
 	content: '';
 	position: absolute;
+	bottom: 0;
 	width: 25px;
 	height: 25px;
-	background: transparent;
 	border-inline-end: 1px solid var(--corner-color);
 	border-block-end: 1px solid var(--corner-color);
+	background: transparent;
 	transform: rotate(90deg);
 }
 
@@ -49,13 +49,13 @@
 }
 
 .theme_light .header__theme-menu-list {
-	color: var(--paragraph-text-color);
 	margin-block-start: 62px;
+	color: var(--paragraph-text-color);
 }
 
-.header__theme-menu-item:last-child {	
+.header__theme-menu-item:last-child {
+	padding-block-end: 1.5px;	
 	outline: 1px solid currentColor;
-	padding-block-end: 1.5px;
 }
 
 .header__theme-menu-item:hover {
@@ -63,53 +63,53 @@ outline: 1px solid rgba(var(--nav-outline-rgb), .5);
 }
 
 .header__theme-menu-button:focus-visible {
-	outline: none;
 	box-shadow: 0 1px 0 currentColor;
+	outline: none;
 }
 
 .header__theme-menu-button {
+	border: none;
 	padding: 0 13px 1.5px;
 	text-transform: lowercase;
 	background: transparent;
-	border: none;
 }
 
 .decor {
-display: grid;
-justify-self: end;
-inline-size: 9px;
-block-size: 9px;
-margin: 8px;
-margin-block-end: 44px;
-background-color: var(--accent-color);
-box-shadow: 0 0 4px 2px var(--accent-color);
-border-radius: 50%;
-position: relative;
+	position: relative;
+	display: grid;
+	justify-self: end;
+	margin: 8px;
+	margin-block-end: 44px;
+	border-radius: 50%;
+	box-shadow: 0 0 4px 2px var(--accent-color);
+	background-color: var(--accent-color);
+	inline-size: 9px;
+	block-size: 9px;
 }
 
 .decor::before {
 	content: 'REC';
-	color: var(--accent-color);
 	position: absolute;
-	left: -45px;
 	top: -60%;
+	left: -45px;
+	color: var(--accent-color);
 }
 
 .h1 {
-	font-weight: 700;
-	font-size:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-	color: var(--main-title-color);
-	text-shadow: 4px 4px 0 var(--text-shadow-color);
 	margin-block-start: 65px;
 	margin-block-end: 55px;
+	color: var(--main-title-color);
+	font-weight: 700;
+	font-size:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 	line-height: 83%;
+	text-shadow: 4px 4px 0 var(--text-shadow-color);
 }
 
-.h2{
+.h2 {
 	color: var(--accent-color);
-	line-height: 130%;
-	font-size: 18px;
 	font-weight: 700;
+	font-size: 18px;
+	line-height: 130%;
 }
 
 .title-decor {
@@ -175,8 +175,8 @@ position: relative;
 }
 
 .gallery {
-	justify-self: center;
 	display: grid;
+	justify-self: center;
 	row-gap: 10px;
 }
 
@@ -191,38 +191,38 @@ position: relative;
 }
 
 .footer::before {
-	right: 0;
 	content: '';
 	position: absolute;
+	right: 0;
 	width: 25px;
 	height: 25px;
-	background: transparent;
 	border-inline-end: 1px solid var(--corner-color);
 	border-block-end: 1px solid var(--corner-color);
+	background: transparent;
 	transform: rotate(270deg);
 }
 
 .footer::after {
-	bottom: 0;
 	content: '';
 	position: absolute;
+	bottom: 0;
 	width: 25px;
 	height: 25px;
-	background: transparent;
 	border-inline-end: 1px solid var(--corner-color);
 	border-block-end: 1px solid var(--corner-color);
+	background: transparent;
 	transform: rotate(90deg);
 }
 
 .footer__h2 {
 	justify-self: center;
-	font-weight: 700;
-	font-size:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-	color: var(--main-title-color);
-	text-shadow: 4px 4px 0 var(--text-shadow-color);
-	line-height: 83%;
 	margin-block-start: 276px;
 	margin-block-end: 276px;
+	color: var(--main-title-color);
+	font-weight: 700;
+	font-size:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+	line-height: 83%;
+	text-shadow: 4px 4px 0 var(--text-shadow-color);
 }
 
 script {
@@ -232,8 +232,8 @@ script {
 @media (width>=768px) {
 	
 	.page {
-		padding: 20px;
 		row-gap: 80px;
+		padding: 20px;
 	}
 
 	.decor {
@@ -256,8 +256,8 @@ script {
 	}
 
 	.header .h2 {
-		width: 364px;
 		justify-self: end;
+		width: 364px;
 		margin-block-end: 161px;
 	}
 
@@ -378,9 +378,9 @@ script {
 }
 
 .footer__h2 {
-	font-size: 157px;
 	margin-block-start: 299px;
 	margin-block-end: 299px;
+	font-size: 157px;
 }
 
 }
