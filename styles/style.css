@@ -53,7 +53,7 @@
 }
 
 .header__theme-menu-button_active {
-	padding-block-end: 1.5px;	
+	padding-block-end: 1.5px;
 	outline: 1px solid currentColor;
 	pointer-events: none;
 }
@@ -214,6 +214,7 @@ outline: 1px solid rgba(var(--nav-outline-rgb), .5);
 
 	.header {
 		min-height: calc(100vh - 40px);
+		row-gap: 100px;
 	}
 	
 	.page {
@@ -223,10 +224,6 @@ outline: 1px solid rgba(var(--nav-outline-rgb), .5);
 
 	.decor {
 		margin-block-end: 56px;
-	}
-
-	.header {
-		row-gap: 100px;
 	}
 
 	.header__theme-menu-list {

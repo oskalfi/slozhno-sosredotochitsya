@@ -27,9 +27,6 @@
 .theme_light .header__theme-menu-list {
 	margin-block-start: 62px;
 	color: var(--paragraph-text-color);
-}
-
-.theme_light .header__theme-menu-list {
 	margin-block-start: 66px;
 	margin-block-end: 26px;
 }
