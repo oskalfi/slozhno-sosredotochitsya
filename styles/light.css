@@ -64,6 +64,23 @@
 
 }
 
+@media (width>=768px) and (width<1024px) and (height<900px) { 
+	/* чтобы не съезжал подзаголовок на таком разрешении */
+	/* иначе его выталкивает на секцию снизу */
+	.theme_light .header__theme-menu-list {
+		margin: 0;
+		margin-block-start: 50px;
+	}
+
+	.theme_light .header__title {
+		margin: 0;
+	}
+
+	.theme_light .header .subtitle {
+		margin-block-end: 0;
+	}
+}
+
 @media (prefers-color-scheme:light) {
 
 	.page.theme_light {
