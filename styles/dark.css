@@ -18,5 +18,4 @@
 	--paragraph-text-color: #F1B2CE;
 	--background-image: url(../images/cover-image-dark.png);
 	--corner-color: var(--accent-color);
-	background-color: var(--dark-theme);
 }
