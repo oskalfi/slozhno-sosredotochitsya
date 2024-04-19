@@ -116,16 +116,16 @@
 		color: var(--paragraph-text-color);
 	}
 
+	.theme_dark .decor {
+		display: block;
+	}
+
 	.theme_dark .header__theme-menu-item {
 		color: var(--accent-color);
 	}
 	
-	.theme_dark .section > .subtitle{
+	.theme_dark .section > .subtitle {
 		color: var(--accent-color);
-	}
-	
-	.theme_dark .decor {
-		display: block;
 	}
 
 }
