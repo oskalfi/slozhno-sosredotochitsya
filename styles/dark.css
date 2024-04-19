@@ -28,9 +28,7 @@
 	color: var(--accent-color);
 }
 
-.theme_dark .decor {
-	display: absolute;
-}
+
 
 .theme_dark .section:has(.gallery) .subtitle {
 	color: var(--text-color-black);

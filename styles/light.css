@@ -110,6 +110,8 @@
 
 	:root .header__theme-menu-list {
 		color: var(--paragraph-text-color);
+		margin-block-start: 66px;
+		margin-block-end: 26px;
 	}
 
 	:root .section>.subtitle {
