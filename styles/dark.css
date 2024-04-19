@@ -20,6 +20,11 @@
 	--corner-color: var(--accent-color);
 }
 
+.theme_dark .header__theme-menu-list {
+	color: var(--paragraph-text-color);
+	margin-block-end: 25px;
+}
+
 .theme_dark .header__theme-menu-item {
 	color: var(--accent-color);
 }
@@ -27,8 +32,6 @@
 .theme_dark .section > .subtitle {
 	color: var(--accent-color);
 }
-
-
 
 .theme_dark .section:has(.gallery) .subtitle {
 	color: var(--text-color-black);
