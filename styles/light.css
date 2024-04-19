@@ -149,6 +149,15 @@
 		margin-block-end: 60px;
 	}
 
+	.theme_dark .header__theme-menu-list {
+		margin-block-start: 0;
+		margin-block-end: 76px;
+	}
+
+	.theme_dark .header__title {
+		margin-block-end: 60px;
+	}
+
 }
 
 @media (prefers-color-scheme:light) and (width>=1024px) {

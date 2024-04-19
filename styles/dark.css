@@ -40,6 +40,7 @@
 @media (width>=768px) {
 
 	.theme_dark .header__theme-menu-list {
+		margin-block-start: 0;
 		margin-block-end: 76px;
 	}
 
@@ -66,9 +67,8 @@
 
 }
 
-@media (width>=768px) and (width<1024px) and (height<900px) { 
-	/* чтобы не съезжал подзаголовок на таком разрешении */
-	/* иначе его выталкивает на секцию снизу */
+/* @media (width>=768px) and (width<1024px) and (height<900px) { 
+
 	.theme_dark .header {
 		row-gap: 60px;
 	}
@@ -85,4 +85,4 @@
 	.theme_dark .header .subtitle {
 		margin-block-end: 0;
 	}
-}
+} */
