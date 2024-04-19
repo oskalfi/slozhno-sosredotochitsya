@@ -88,57 +88,6 @@
 
 @media (prefers-color-scheme:light) {
 
-	@media (width>=768px) {
-
-		.theme_light .header__theme-menu-list {
-			margin-block-start: 172px;
-			margin-block-end: 76px;
-		}
-	
-		.theme_light .header__title {
-			margin-block-end: 60px;
-		}
-	
-	}
-	
-	@media (width>=1024px) {
-	
-		.theme_light .header__theme-menu-list {
-		display: flex;
-		justify-self: center;
-		column-gap: 10px;
-		align-self: flex-start;
-		margin-block-start: 0;
-		margin-block-end: 173px;
-	}
-	
-	.theme_light .header__title {
-		margin-block-end: 14px;
-	}
-	
-	}
-	
-	@media (width>=768px) and (width<1024px) and (height<900px) { 
-		/* чтобы не съезжал подзаголовок на таком разрешении */
-		/* иначе его выталкивает на секцию снизу */
-		.theme_light .header {
-			row-gap: 60px;
-		}
-		
-		.theme_light .header__theme-menu-list {
-			margin-block-start: 132px;
-			margin-block-end: 1px;
-		}
-	
-		.theme_light .header__title {
-			margin: 0;
-		}
-	
-		.theme_light .header .subtitle {
-			margin-block-end: 0;
-		}
-	}
-
 	:root {
 		--light-theme: #FFF1F7;
 		--accent-color: #FF8DCB;
@@ -187,6 +136,57 @@
 		color: var(--accent-color);
 	}
 
+}
+
+@media (prefers-color-scheme:light) and (width>=768px) {
+
+	.theme_light .header__theme-menu-list {
+		margin-block-start: 172px;
+		margin-block-end: 76px;
+	}
+
+	.theme_light .header__title {
+		margin-block-end: 60px;
+	}
+
+}
+
+@media (prefers-color-scheme:light) and (width>=1024px) {
+
+	.theme_light .header__theme-menu-list {
+		display: flex;
+		justify-self: center;
+		column-gap: 10px;
+		align-self: flex-start;
+		margin-block-start: 0;
+		margin-block-end: 173px;
+	}
+	
+	.theme_light .header__title {
+		margin-block-end: 14px;
+	}
+
+}
+
+@media (prefers-color-scheme:light) and (width>=768px) and (width<1024px) and (height<900px) { 
+	/* чтобы не съезжал подзаголовок на таком разрешении */
+	/* иначе его выталкивает на секцию снизу */
+	.theme_light .header {
+		row-gap: 60px;
+	}
+	
+	.theme_light .header__theme-menu-list {
+		margin-block-start: 132px;
+		margin-block-end: 1px;
+	}
+
+	.theme_light .header__title {
+		margin: 0;
+	}
+
+	.theme_light .header .subtitle {
+		margin-block-end: 0;
+	}
 }
 
 
