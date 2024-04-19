@@ -52,7 +52,7 @@
 	display: grid;
 	justify-content: end;
 	row-gap: 12px;
-	margin-block-end: 25px; 
+	margin-block-end: 25px;
 }
 
 .header__theme-menu-button_active {
