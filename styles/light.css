@@ -88,54 +88,6 @@
 
 @media (prefers-color-scheme:light) {
 
-	:root {
-		--light-theme: #FFF1F7;
-		--accent-color: #FF8DCB;
-		--nav-outline-rgb: 53,52,48;
-		--main-title-color: #FFC2E6;
-		--text-color-black: #353430;
-		--text-shadow-color: #FF0070;
-		--paragraph-text-color: #353430;
-		--background-image: url(../images/cover-image-light.png);
-		--corner-color: var(--paragraph-text-color);
-	}
-
-	:root .decor {
-		display: none;
-		}
-
-	:root .header__title {
-		margin-block-end: 14px;
-	}
-
-	:root .header__theme-menu-list {
-		color: var(--paragraph-text-color);
-		margin-block-start: 66px;
-		margin-block-end: 26px;
-	}
-
-	:root .section>.subtitle {
-		color: var(--paragraph-text-color);
-	}
-
-	.theme_dark .decor {
-		display: block;
-	}
-
-	.theme_dark .header__theme-menu-list {
-		color: var(--paragraph-text-color);
-		margin-block-start: 0;
-		margin-block-end: 25px;
-	}
-
-	.theme_dark .header__theme-menu-item {
-		color: var(--accent-color);
-	}
-	
-	.theme_dark .section > .subtitle {
-		color: var(--accent-color);
-	}
-
 	@media (width>=768px) {
 
 		.theme_light .header__theme-menu-list {
@@ -185,6 +137,54 @@
 		.theme_light .header .subtitle {
 			margin-block-end: 0;
 		}
+	}
+
+	:root {
+		--light-theme: #FFF1F7;
+		--accent-color: #FF8DCB;
+		--nav-outline-rgb: 53,52,48;
+		--main-title-color: #FFC2E6;
+		--text-color-black: #353430;
+		--text-shadow-color: #FF0070;
+		--paragraph-text-color: #353430;
+		--background-image: url(../images/cover-image-light.png);
+		--corner-color: var(--paragraph-text-color);
+	}
+
+	:root .decor {
+		display: none;
+		}
+
+	:root .header__title {
+		margin-block-end: 14px;
+	}
+
+	:root .header__theme-menu-list {
+		margin-block-start: 66px;
+		margin-block-end: 26px;
+		color: var(--paragraph-text-color);
+	}
+
+	:root .section>.subtitle {
+		color: var(--paragraph-text-color);
+	}
+
+	.theme_dark .decor {
+		display: block;
+	}
+
+	.theme_dark .header__theme-menu-list {
+		margin-block-start: 0;
+		margin-block-end: 25px;
+		color: var(--paragraph-text-color);
+	}
+
+	.theme_dark .header__theme-menu-item {
+		color: var(--accent-color);
+	}
+	
+	.theme_dark .section > .subtitle {
+		color: var(--accent-color);
 	}
 
 }

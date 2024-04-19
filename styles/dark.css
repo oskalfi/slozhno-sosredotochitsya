@@ -21,8 +21,8 @@
 }
 
 .theme_dark .header__theme-menu-list {
-	color: var(--paragraph-text-color);
 	margin-block-end: 25px;
+	color: var(--paragraph-text-color);
 }
 
 .theme_dark .header__theme-menu-item {
@@ -35,4 +35,54 @@
 
 .theme_dark .section:has(.gallery) .subtitle {
 	color: var(--text-color-black);
+}
+
+@media (width>=768px) {
+
+	.theme_dark .header__theme-menu-list {
+		margin-block-end: 76px;
+	}
+
+	.theme_dark .header__title {
+		margin-block-end: 60px;
+	}
+
+}
+
+@media (width>=1024px) {
+
+	.theme_dark .header__theme-menu-list {
+	display: flex;
+	justify-self: center;
+	column-gap: 10px;
+	align-self: flex-start;
+	margin-block-start: 0;
+	margin-block-end: 173px;
+}
+
+.theme_dark .header__title {
+	margin-block-end: 14px;
+}
+
+}
+
+@media (width>=768px) and (width<1024px) and (height<900px) { 
+	/* чтобы не съезжал подзаголовок на таком разрешении */
+	/* иначе его выталкивает на секцию снизу */
+	.theme_dark .header {
+		row-gap: 60px;
+	}
+	
+	.theme_dark .header__theme-menu-list {
+		margin-block-start: 132px;
+		margin-block-end: 1px;
+	}
+
+	.theme_dark .header__title {
+		margin: 0;
+	}
+
+	.theme_dark .header .subtitle {
+		margin-block-end: 0;
+	}
 }
